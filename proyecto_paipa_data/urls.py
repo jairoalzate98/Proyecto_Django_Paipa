@@ -4,6 +4,8 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'estratos', views.EstratosViewSet, basename='estratos')
+router.register(r'animales', views.AnimalesViewSet, basename='animales')
+router.register(r'animalesVacunados', views.AnimalesVacunadosViewSet, basename='animales')
 
 
 urlpatterns = [
